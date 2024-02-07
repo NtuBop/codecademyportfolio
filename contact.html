@@ -6,57 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
 
+    <link rel="stylesheet" href="styles.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/45ec6939a1.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="contactPage">
 
-    <h1>Contact Page</h1>
-    <a href="./index.html">back</a>
+    <nav nav class="navbar navbar-light bg-light pe-4">
+        <a class="navbar-brand" href="#">
+            <img src="/./assets/images/BopsCodeCademyPortfolio.png"  alt="">
+        </a>
 
-    <form>
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="First name">
+        <ul class="nav text-end">
+            <li class="nav-item">
+
+                <a class="nav-link px-2" href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 navContactPage" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container col-xxl-10 px-4 py-5">
+        <h2 class="contactUsHeading">Contact Us</h2>
+        <span class="backLinkIcon" style="color: #fff;"><i class="fa-solid fa-backward"></i></span>
+        <a class="backLink" href="./index.html">back</a>
+
+        <form class="text-light">
+            <div class="row pb-3 pt-5">
+                <div class="col">
+                    <label for="nameInput">First Name</label>
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <label for="nameInput">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
             </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Last name">
-            </div>
-        </div>
 
-        <div class="form-group row">
-            <div class="col">
-                <label for="emailInput">Email address</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+            <div class="form-group row pb-3 pt-3">
+                <div class="col">
+                    <label for="emailInput">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                </div>
+                <div class="col">
+                    <label for="telInput">Phone Number</label>
+                    <input type="tel" class="form-control" id="telInput" placeholder="+44 7553089227">
+                </div>
             </div>
-            <div class="col">
-                <label for="telInput">Phone Number</label>
-                <input type="tel" class="form-control" id="telInput" placeholder="+44 7553089227">
+
+            <div class="form-group col-md-4 pb-3 pt-3">
+                <label for="inputState">Needed Services</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Please Choose</option>
+                    <option>Website Design</option>
+                    <option>Website Development</option>
+                    <option>Social Media Management</option>
+                    <option>Social Media Management</option>
+                    <option>A Bit of This & That</option>
+                </select>
             </div>
-        </div>
+            <div class="form-group pb-3 pt-3">
+                <label for="textareaInput">Message</label>
+                <textarea class="form-control" id="textareaInput" rows="7"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-secondary btn-lg col-8">Submit</button>
+            </div>
 
-        <div class="form-group col-md-4">
-            <label for="inputState">Needed Services</label>
-            <select id="inputState" class="form-control">
-                <option selected>Please Choose</option>
-                <option>Website Design</option>
-                <option>Website Development</option>
-                <option>Social Media Management</option>
-                <option>Social Media Management</option>
-                <option>A Bit of This & That</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="textareaInput">Message</label>
-            <textarea class="form-control" id="textareaInput" rows="7"></textarea>
-        </div>
-        <div>
-            <button type="submit" class="btn btn-secondary btn-lg col-8">Submit</button>
-        </div>
+        </form>
+    </div>
 
-    </form>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

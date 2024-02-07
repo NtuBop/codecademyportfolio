@@ -1,5 +1,4 @@
-/* Class Selectors */
-
+/* Home Page */
 nav img {
     width: 11.25rem;
     height: 5rem;
@@ -17,12 +16,16 @@ nav img:hover {
     font-size: 1rem;
     transition: font-size 0.5s;
 }
+
 .nav-item a:hover {
     font-size: 1.25rem;
     color: #808000;
 }
 
-
+.nav-item a:focus {
+    text-decoration: underline;
+    color: #808000;
+}
 
 .projects-section a {
     text-decoration: none;
@@ -50,3 +53,58 @@ i {
     color: #5c5c0a;
     font-size: 1.25rem;
 }
+
+
+/* Contact Page */
+
+.contactUsHeading {
+    color: #fff;
+}
+.container i {
+    padding-right: 0.25rem;
+}
+
+.backLink {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #fff;
+    transition: font-size 0.4s;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+span .backLinkIcon {
+    color: #fff;
+}
+.backLink:hover {
+    font-size: 1.5rem;
+}
+
+
+.contactPage {
+    position: relative;
+  }
+  
+  .contactPage:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('./assets/images/myIsometric.jpg');
+    /* background-image: url('./assets/images/myIsometric.jpg'); */
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  .container {
+    position: relative;
+  }
+
+
+
+
