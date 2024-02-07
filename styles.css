@@ -1,2 +1,52 @@
 /* Class Selectors */
 
+nav img {
+    width: 11.25rem;
+    height: 5rem;
+    transition: width 0.5s, height 0.5s;
+}
+
+nav img:hover {
+    width: 12.5rem;
+    height: 6rem
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #808000;
+    font-size: 1rem;
+    transition: font-size 0.5s;
+}
+.nav-item a:hover {
+    font-size: 1.25rem;
+    color: #808000;
+}
+
+
+
+.projects-section a {
+    text-decoration: none;
+    color: #808000;
+    font-size: 1rem;
+    transition: font-size 0.5s;
+}
+
+.projects-section a:hover {
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+i {
+    padding-right: 5rem;
+}
+
+.social-icons a {
+    color: #808000;
+    font-size: 1rem;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.social-icons a:hover {
+    color: #5c5c0a;
+    font-size: 1.25rem;
+}
